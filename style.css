@@ -55,3 +55,67 @@ nav ul li a:hover {
     box-shadow: 0px 8px 15px rgb(116, 116, 116);
 
 }
+
+.details {
+    display: flex;
+    flex-direction: row;
+    margin-left: -70px;
+    gap: 440px;
+    align-items: center;
+    margin-top: 225px;
+}
+
+.left {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.left img {
+    height: 15vh;
+
+}
+
+.left h3 {
+    width: 45%;
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    cursor: pointer;;
+}
+
+.right {
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 30px;
+    
+}
+
+.right h3  {
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.right a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 6px;
+    border: rgb(90, 89, 89) solid 2px;
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.right a:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 10px 10px rgb(184, 184, 184);
+
+}
