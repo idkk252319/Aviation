@@ -17,6 +17,33 @@ header {
     margin-top: 20px;
     position: sticky;
     top: 0;
+    z-index: 1000;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#darkmode {
+    height: 50%;
+    background-color: rgba(126, 126, 126, 0.2);
+    backdrop-filter: blur(3px);
+    padding: 6px;
+    border-radius: 8px;
+    color: black;
+    border: none;
+    width: 4%;
+    box-shadow: 8px 8px 12px rgb(75, 75, 75);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#darkmode:hover {
+    background-color: rgba(39, 38, 38, 0.2);
 }
 
 .nav {
@@ -26,6 +53,7 @@ header {
     border-radius: 16px;
     color: white;
     width: 55vw;
+    box-shadow: 8px 8px 12px rgb(105, 105, 105);
 }
 
 nav ul {
@@ -63,6 +91,7 @@ nav ul li a:hover {
     gap: 440px;
     align-items: center;
     margin-top: 225px;
+    margin-bottom: 200px;
 }
 
 .left {
@@ -118,4 +147,68 @@ nav ul li a:hover {
     transform: translateY(-20px);
     box-shadow: 0px 10px 10px rgb(184, 184, 184);
 
+}
+
+.intro img {
+    height: 60%;
+    border-radius: 16px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    background-color: rgba(188, 188, 188, 0.3);
+    padding: 40px;
+    width: 80%;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    box-shadow: 8px 8px 12px rgb(179, 178, 178);
+}
+
+.intro h1 {
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.intro h4 {
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 4px;
+    cursor: pointer;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.intro p {
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.intro a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    background-color: rgb(90, 89, 89);
+    padding: 9px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    width: 10%;
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.intro a:hover {
+    background-color: rgb(57, 56, 56);
 }
