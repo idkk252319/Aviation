@@ -3,9 +3,9 @@ let bodyHTML = document.getElementById('body')
 let navbarHTML = document.querySelector('.nav')
 let h3HTML = document.querySelectorAll('h3')
 let aHTML = document.querySelectorAll('a')
-let h1HTML = document.getElementById('title')
-let h4HTML = document.querySelector('h4')
-let pHTML = document.querySelector('p')
+let h1HTML = document.querySelectorAll('h1')
+let h4HTML = document.querySelectorAll('h4')
+let pHTML = document.querySelectorAll('p')
 const audio = new Audio('./assets/seatbelt.mp3')
 
 
@@ -26,11 +26,17 @@ darkmodeHTML.addEventListener('click', () => {
         h3tag.style.color = "white"
     })
 
-    h1HTML.style.color = "white"
+    h1HTML.forEach((h1tag) => {
+        h1tag.style.color = "white"
+    })
 
-    h4HTML.style.color = "white"
+    h4HTML.forEach((h4tag) => {
+        h4tag.style.color = "white"
+    })
 
-    pHTML.style.color = "white"
+    pHTML.forEach((ptag) => {
+        ptag.style.color = "white"
+    })
 
     audio.currentTime = 0
     audio.play()
