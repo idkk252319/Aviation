@@ -76,7 +76,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(126, 126, 126, 0.2);
+    background-color: rgba(126, 126, 126, 0.1);
     backdrop-filter: blur(3px);
     border-radius: 24px;
     padding: 10px;
@@ -177,16 +177,16 @@ h1 {
     margin-bottom: 30px;
 }
 
-.intro h4 {
+h4 {
     font-family: sans-serif;
-    font-weight: 100;
+    font-weight: lighter;
     letter-spacing: 4px;
     cursor: pointer;
     font-style: italic;
     margin-left: 20px;
 }
 
-.intro p {
+p {
     font-family: sans-serif;
     font-weight: 100;
     letter-spacing: 2px;
@@ -249,7 +249,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
 }
 
 .a380,
@@ -274,9 +274,77 @@ h1 {
 }
 
 .footerp p {
-    width: 30%;
     font-family: sans-serif;
     font-weight: 100;
     letter-spacing: 2px;
     cursor: pointer;
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+    
+}
+
+.footerp #quote {
+    font-style: italic;
+    color: rgb(193, 192, 192);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer a {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 13px;
+    
+
+}
+
+.footerp {
+    display: inline-flex;
+    width: 33%;
+}
+
+.footer {
+    background-color: #020817;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+    align-items: center;
+    box-shadow: 0px -1px 0px rgb(190, 190, 190);
+}
+
+.all {
+    padding: 40px;
+    margin-top: 200px;
+}
+
+.all p {
+    margin-left: 18px;
+}
+
+.credits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.credits #c {
+    margin-right: 20px;
+    color: rgb(101, 101, 101);
+}
+
+.a380 #c,
+.b747 #c,
+.beluga #c,
+.lf #c {
+    font-size: 12px;
 }
