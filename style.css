@@ -281,7 +281,7 @@ p {
     font-size: 14px;
     line-height: 25px;
     color: white;
-    
+
 }
 
 .footerp #quote {
@@ -302,7 +302,7 @@ p {
     letter-spacing: 2px;
     cursor: pointer;
     font-size: 13px;
-    
+
 
 }
 
@@ -322,9 +322,22 @@ p {
     box-shadow: 0px -1px 0px rgb(190, 190, 190);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .all {
     padding: 40px;
     margin-top: 200px;
+    background-color: rgba(16, 16, 16, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    box-shadow: 8px 8px 12px rgb(179, 178, 178);
+    width: 80%;
+    margin-bottom: 200px;
 }
 
 .all p {
@@ -347,12 +360,19 @@ p {
 .beluga #c,
 .lf #c {
     font-size: 12px;
+    margin-left: -80px;
 }
 
 .airbus {
     padding: 30px;
     display: flex;
     flex-direction: column;
+    background-color: rgba(188, 188, 188, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    box-shadow: 8px 8px 12px rgb(179, 178, 178);
+    width: 80%;
+    margin-bottom: 200px;
 }
 
 .airbus #airbus {
@@ -374,5 +394,10 @@ p {
     font-size: 12px;
 }
 
-
+.AandB {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
