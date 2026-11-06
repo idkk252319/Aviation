@@ -348,3 +348,31 @@ p {
 .lf #c {
     font-size: 12px;
 }
+
+.airbus {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.airbus #airbus {
+    width: 15%;
+    height: 10%;
+    margin-left: 20px;
+    border-radius: 16px;
+}
+
+.airbus img {
+    width: 60%;
+    height: 30%;
+    border-radius: 32px;
+    box-shadow: 8px 8px 12px rgb(95, 95, 95);
+}
+
+.airbus #c {
+    color: rgb(53, 52, 52);
+    font-size: 12px;
+}
+
+
+

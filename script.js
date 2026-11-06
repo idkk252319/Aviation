@@ -6,6 +6,8 @@ let aHTML = document.querySelectorAll('a')
 let h1HTML = document.querySelectorAll('h1')
 let h4HTML = document.querySelectorAll('h4')
 let pHTML = document.querySelectorAll('p')
+let liHTML = document.querySelectorAll('li')
+
 const audio = new Audio('./assets/seatbelt.mp3')
 
 
@@ -36,6 +38,10 @@ darkmodeHTML.addEventListener('click', () => {
 
     pHTML.forEach((ptag) => {
         ptag.style.color = "white"
+    })
+
+    liHTML.forEach((litag) => {
+        litag.style.color = "white"
     })
 
     audio.currentTime = 0
