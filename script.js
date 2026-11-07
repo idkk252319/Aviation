@@ -10,6 +10,7 @@ let introHTML = document.querySelector('.intro')
 let funfactsHTML = document.querySelector('.funfacts')
 let airbusHTML = document.querySelectorAll('.airbus')
 let liHTML = document.querySelectorAll('li')
+let labelHTML = document.querySelectorAll('label')
 
 const audio = new Audio('./assets/seatbelt.mp3')
 
@@ -50,6 +51,11 @@ darkmodeHTML.addEventListener('click', () => {
     audio.currentTime = 0
     audio.play()
 
+    labelHTML.forEach((labeltag) => {
+        labeltag.style.color = "white"
+    })
+
+
     introHTML.style.backgroundColor = "rgba(16, 16, 16, 0.3)"
     funfactsHTML.style.backgroundColor = "rgba(16, 16, 16, 0.3)"
 
@@ -60,5 +66,26 @@ darkmodeHTML.addEventListener('click', () => {
         bus.style.color = "white"
     })
 
+    
+
+    
 
 })
+
+function sendMail() {
+    let parms = {
+        name : document.getElementById('name').value,
+        email : document.getElementById('email').value,
+        idea : document.getElementById('idea').value,
+        airline : document.getElementById('airline').value,
+
+    }
+
+    emailjs.send("service_52zcayt", "template_y31cnlv", parms).then(alert('Great Idea!'))
+}
+
+window.addEventListener("load", function () {
+    const loader = document.getElementById('preloader');
+
+    loader.style.display = "none"
+});

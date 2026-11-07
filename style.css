@@ -457,7 +457,7 @@ main {
 }
 
 .topp h1 {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .topp h4 {
@@ -469,4 +469,188 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+form {
+    background-color: rgba(95, 95, 95, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    box-shadow: 8px 8px 12px rgb(179, 178, 178);
+    padding: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.form-group label {
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.form-group input {
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+}
+
+.form-group textarea {
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+form button {
+    margin-right: -80%;
+    padding: 15px;
+    width: 20%;
+    border: none;
+    color: white;
+    background-color: #020817;
+    border-radius: 8px;
+}
+
+#form {
+    width: 40%;
+    background-color: rgba(121, 120, 120, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    box-shadow: 8px 8px 12px rgb(179, 178, 178);
+    padding: 40px;
+    margin-left: -7px;
+}
+
+.all3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+}
+
+.topp1 {
+    padding: 40px;
+    margin-top: 200px;
+    background-color: rgba(16, 16, 16, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    box-shadow: 8px 8px 12px rgb(179, 178, 178);
+    margin-bottom: 200px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.images img {
+    width: 45%;
+    border-radius: 16px;
+    box-shadow: 8px 8px 12px rgb(95, 95, 95);
+}
+
+.accident {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(95, 95, 95, 0.3);
+    border-radius: 16px;
+    padding: 40px;
+    backdrop-filter: blur(6px);
+    margin-bottom: 200px;
+}
+
+.accident iframe {
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 16px;
+}
+
+.accident h4 {
+    font-size: 20px;
+}
+
+#preloader {
+    width: 100%;
+    height: 100%;
+    background: rgb(59, 85, 152) url(https://png.pngtree.com/png-vector/20231016/ourmid/pngtree-a-white-cargo-plane-providing-commercial-passenger-services-png-image_10291869.png) no-repeat fixed center;
+    position: fixed;
+    z-index: 10000;
+}
+
+@media only screen and (max-width: 576px) {
+    .nav {
+        flex-direction: column;
+        width: 70vw;
+
+    }
+
+    .top {
+        gap: 20px;
+    }
+
+    #darkmode {
+        width: 15vw;
+    }
+
+    .footerp #quote {
+        width: 70vw;
+        font-size: 10px;
+    }
+
+    .nav a {
+        font-size: 10px;
+    }
+
+    .list p {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .funfacts1 p {
+        font-size: 10px;
+        width: 30vw;
+    }
+
+    .funfacts1 #c {
+        font-size: 5px;
+        margin-left: 10px;
+    }
+
+    .details {
+        display: none;
+    }
+
+    .intro {
+        margin-top: 200px;
+    }
+
+    .intro a {
+        width: 20vw;
+    }
+
+
 }
